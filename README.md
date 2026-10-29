@@ -1,7 +1,5 @@
 # FileTransit
 
-Bağımsız .NET 10 Windows Forms FTP / FTPS / SFTP istemcisi. Angular ve API projeleriyle kod, proje referansı veya servis bağımlılığı yoktur.
-
 ## Başlatma
 
 Windows ve .NET 10 Desktop Runtime gerekir. Geliştirme için .NET 10 SDK:
