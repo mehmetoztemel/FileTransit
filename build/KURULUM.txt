@@ -1,0 +1,35 @@
+﻿FileTransit — Kurulum ve kullanım
+=================================
+
+Gereksinim: Windows 10 veya 11 (64 bit). .NET veya başka bir program kurmanız gerekmez.
+Yönetici şifresi gerekmez; uygulama yalnız sizin Windows kullanıcınız için kurulur.
+
+1) KURULUMLU KULLANIM (önerilen)
+   - FileTransit-<sürüm>-Kurulum.zip dosyasını bir klasöre çıkarın (ZIP içinden çalıştırmayın).
+   - setup.exe dosyasına çift tıklayın, ardından "Yükle"ye basın.
+   - Başlat menüsünde ve masaüstünde "FileTransit" kısayolu oluşur.
+
+2) KURULUMSUZ KULLANIM
+   - FileTransit-<sürüm>-win-x64.exe dosyasını istediğiniz bir klasöre kopyalayıp çift tıklayın.
+   - Kısayol veya kaldırma kaydı oluşmaz; dosyayı silmeniz yeterlidir.
+
+GÜVENLİK UYARILARI
+   Uygulama henüz dijital olarak imzalı değildir. Bu yüzden Windows şu uyarıları gösterebilir:
+   - "Windows bilgisayarınızı korudu": "Ek bilgi" bağlantısına, sonra "Yine de çalıştır"a tıklayın.
+   - Kurulumda "Yayımcı doğrulanamıyor / Bilinmeyen yayımcı": "Yükle" ile devam edin.
+   Dosyayı yalnız güvendiğiniz kişiden aldıysanız devam edin. Dosya bütünlüğünü SHA256SUMS.txt ile
+   karşılaştırabilirsiniz (PowerShell: Get-FileHash <dosya> -Algorithm SHA256).
+
+GÜNCELLEME
+   Yeni sürüm paketindeki setup.exe dosyasını çalıştırın; mevcut kurulum güncellenir.
+   Kayıtlı sunucularınız, ayarlarınız ve kuyruğunuz korunur.
+
+KALDIRMA
+   Ayarlar > Uygulamalar > Yüklü uygulamalar > FileTransit > Kaldır.
+   Kayıtlı sunucular ve ayarlar kaldırmadan sonra da durur. Tamamen silmek için şu klasörü silin:
+   %LOCALAPPDATA%\FileTransit
+
+VERİLERİNİZ NEREDE?
+   Sunucu profilleri, ayarlar ve kuyruk: %LOCALAPPDATA%\FileTransit\workspace.json
+   "Parolayı hatırla" seçili parolalar Windows hesabınıza bağlı olarak şifrelenir; başka bilgisayara
+   kopyalanan dosyadaki parolalar çözülemez, yeniden girilmelidir. Bu dosyayı başkalarıyla paylaşmayın.

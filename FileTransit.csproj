@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>FileTransit.ico</ApplicationIcon>
+    <Version>2.1.1</Version>
+    <Product>FileTransit</Product>
+    <AssemblyTitle>FileTransit</AssemblyTitle>
+    <Company>FileTransit</Company>
+    <Authors>FileTransit</Authors>
+    <Description>FTP, FTPS ve SFTP dosya aktarım uygulaması</Description>
+    <Copyright>© 2026 FileTransit</Copyright>
+    <!-- Publish outputs and test fixtures under artifacts\ must never be picked up as project items. -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);artifacts\**;build\**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Tests\**\*.cs" />
+    <Compile Remove="artifacts\**\*.cs" />
+    <PackageReference Include="FluentFTP" Version="55.1.0" />
+    <PackageReference Include="SSH.NET" Version="2026.0.0" />
+  </ItemGroup>
+</Project>

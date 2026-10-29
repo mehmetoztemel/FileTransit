@@ -1,0 +1,9 @@
+bin/
+obj/
+artifacts/
+.vs/
+*.user
+
+# Local working notes for AI-assisted sessions; kept on disk, not published.
+/AGENTS.md
+/PROJE_DEVIR.md
